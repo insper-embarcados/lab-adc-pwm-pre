@@ -20,3 +20,30 @@ $y = \frac{\boldsymbol{A_{6}} + A_{5} + A_{4} + A_{3} + A_{2}}{5}$
 > Dá para implementar a média móvel de duas maneiras: com um vetor ou de forma recursiva.
 
 - Livro com ótima explicação: [The Scientist and Engineer's Guide to Digital Signal Processing](https://www.analog.com/media/en/technical-documentation/dsp-book/dsp_book_ch15.pdf)
+
+
+## Tarefa
+    
+Para todos os dados que chegam na fila `xQueueData`, aplique uma média móvel de tamanho 5 e imprima o dado filtrado na UART. 
+
+O dado que chega na fila é um inteiro que representa uma senoide com ruído:
+
+![](imgs/lab-adc-exe3-raw.png)
+
+E, aplicando a média móvel, vocês devem obter algo assim:
+
+![](imgs/lab-adc-exe3-filtered.png)
+
+## Esperado na UART
+
+```
+28 
+47 
+89 
+127 
+155 
+172 
+193  
+```
+
+**Você pode pegar esses dados e plotar no Google Sheets para ver se o resultado é o esperado.**
