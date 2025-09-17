@@ -9,7 +9,7 @@
 #include "hardware/gpio.h"
 #include "hardware/adc.h"
 
-void adc_1_task(void *p) {
+void adc_task(void *p) {
     adc_init();
     adc_gpio_init(27);
 
@@ -35,7 +35,7 @@ int main() {
     printf("Start RTOS \n");
     adc_init();
 
-    xTaskCreate(adc_1_task, "LED_Task 1", 4095, NULL, 1, NULL);
+    xTaskCreate(adc_task, "ADC_Task", 4095, NULL, 1, NULL);
     vTaskStartScheduler();
 
     while (true) {
