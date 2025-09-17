@@ -34,7 +34,7 @@ E, aplicando a média móvel, vocês devem obter algo assim:
 
 ![](imgs/lab-adc-exe3-filtered.png)
 
-## Esperado na UART
+Sendo o dado esperado na saída da UART para validar o processamento é:
 
 ```
 28 
